@@ -63,7 +63,7 @@ export default function Hero() {
       {/* Programme carousel */}
       <ProgrammeCarousel />
       {/* Heure et date en direct */}
-      <LiveClock />
+
       {/* Contenu divisé (apparaît pendant le scroll) */}
       <div className="fixed top-0 left-0 w-full h-screen z-10 pointer-events-none">
         <div className="container mx-auto px-6 h-full flex items-center">
