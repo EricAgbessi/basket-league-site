@@ -17,14 +17,9 @@ export default function BasketballScene({ scrollProgress }: { scrollProgress: nu
       const targetRotation = scrollProgress * Math.PI * 4;
       meshRef.current.rotation.y += (targetRotation - meshRef.current.rotation.y) * 0.1;
 
-      const targetX = scrollProgress * 2;
       const targetY = -0.2 + Math.sin(state.clock.elapsedTime) * 0.1;
 
-      basketballRef.current.position.x += (targetX - basketballRef.current.position.x) * 0.1;
       basketballRef.current.position.y += (targetY - basketballRef.current.position.y) * 0.1;
-
-      const scale = 1.2 - scrollProgress * 0.4;
-      basketballRef.current.scale.set(scale, scale, scale);
     }
   });
 

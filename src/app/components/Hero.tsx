@@ -89,13 +89,8 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              {`L'Afric Hoops League, c'est l'incarnation vibrante du basketball nouvelle génération. Imaginez 
-l'énergie électrisante des salles africaines, la technicité raffinée des meilleurs athlètes du 
-continent, et l'intensité pure de compétitions où chaque possession compte. Avec 16 équipes 
-emblématiques représentant les plus grandes villes africaines et 240 joueurs d'exception, nous 
-redéfinissons les standards du sport spectacle. Dunk spectaculaires, tirs à trois points décisifs, 
-défenses de fer : chaque rencontre est un chef-d'œuvre d'adrénaline et d'émotion pure. Rejoignez 
-la révolution et vibrez au rythme du basketball africain.`}
+              {`Découvrez une ligue où le talent, la passion et l'énergie se rencontrent pour créer un
+              spectacle unique au monde. 16 équipes, 240 joueurs d'élite, une seule passion.`}
             </motion.p>
 
             <motion.div
