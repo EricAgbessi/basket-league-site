@@ -142,7 +142,6 @@ export default function Header() {
             >
               <div className="px-4 py-6 space-y-4">
                 {navItems.map((item, index) => {
-                  const Icon = item.icon;
                   return (
                     <motion.a
                       key={item.name}
@@ -153,7 +152,6 @@ export default function Header() {
                       transition={{ delay: index * 0.1 }}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      <Icon size={20} />
                       <span>{item.name}</span>
                     </motion.a>
                   );
