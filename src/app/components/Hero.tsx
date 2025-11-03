@@ -33,8 +33,7 @@ export default function Hero() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
-  const textOpacity = useTransform(() => 1 - Math.min(scrollProgress * 2, 1));
-  const textY = useTransform(() => -100 * scrollProgress);
+  const textOpacity = useTransform(() => 1 - Math.min(scrollProgress * 3, 1));
   const leftContentX = useTransform(() => -50 * scrollProgress);
   const leftContentOpacity = useTransform(() => 1 - Math.min(scrollProgress * 2, 1));
   const rightContentX = useTransform(() => 50 * (1 - scrollProgress));
@@ -60,7 +59,7 @@ export default function Hero() {
       {/* Overlay de dégradé */}
       <div className="fixed inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40 pointer-events-none" />
       {/* Stats en temps réel */}
-      {/* <LiveStats /> */}
+      <LiveStats />
       {/* Programme carousel */}
       <ProgrammeCarousel />
       {/* Heure et date en direct */}

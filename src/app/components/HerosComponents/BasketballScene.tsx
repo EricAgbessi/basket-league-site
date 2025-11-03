@@ -30,6 +30,8 @@ export default function BasketballScene({ scrollProgress }: { scrollProgress: nu
 
   return (
     <>
+      <color attach="background" args={[theme === "dark" ? "#000000" : "#ffffff"]} />
+
       <ambientLight intensity={theme === "dark" ? 0.4 : 0.8} />
       <directionalLight
         position={[5, 5, 5]}
