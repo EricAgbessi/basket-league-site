@@ -59,7 +59,7 @@ export default function Hero() {
       {/* Overlay de dégradé */}
       <div className="fixed inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40 pointer-events-none" />
       {/* Stats en temps réel */}
-      <LiveStats />
+      {/* <LiveStats /> */}
       {/* Programme carousel */}
       <ProgrammeCarousel />
       {/* Heure et date en direct */}

@@ -11,12 +11,12 @@ export default function LiveStats() {
 
   return (
     <motion.div
-      className="absolute top-8 right-8 bg-black/60 backdrop-blur-md rounded-2xl p-6 border border-orange-500/30"
+      className="absolute top-8 right-8 bg-black/60 backdrop-blur-md rounded-2xl p-2 border border-orange-500/30"
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1 }}
     >
-      <h3 className="text-white font-bold text-lg mb-4 text-orange-400">EN DIRECT</h3>
+      <h3 className="text-white font-bold text-lg mb-2 text-orange-400">EN DIRECT</h3>
       <div className="grid grid-cols-2 gap-4">
         <div className="text-center">
           <div className="text-2xl font-bold text-white">{stats.liveGames}</div>

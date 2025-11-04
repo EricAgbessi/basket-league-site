@@ -3,11 +3,13 @@
 import { motion } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { useTheme } from "next-themes";
 
 // Composant pour le programme des matchs
 export function ProgrammeCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
+  const { theme } = useTheme();
 
   const matches = [
     {
@@ -108,7 +110,7 @@ export function ProgrammeCarousel() {
 
   return (
     <motion.div
-      className="absolute top-20  bg-black/50 backdrop-blur-md rounded-2xl p-2 border border-blue-500/30 w-300"
+      className={`absolute top-20  ${theme === "dark" ? "bg-black/50 border-blue-500/30" : "bg-white/20 border-white-500/30"}  backdrop-blur-md rounded-2xl p-2 border  w-300`}
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1.2 }}
@@ -161,7 +163,9 @@ export function ProgrammeCarousel() {
               transition={{ delay: 1.4 + index * 0.1 }}
             >
               {/* Carte de match */}
-              <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-xl p-2 border border-white/10 hover:border-blue-500/50 transition-all duration-300">
+              <div
+                className={`bg-gradient-to-br ${"from-slate-800/90 to-slate-900/90"}rounded-xl p-2 border border-white/10 hover:border-blue-500/50 rounded-2xl transition-all duration-300`}
+              >
                 {/* En-tête de la carte */}
                 <div className="flex items-center justify-between mb-1">
                   <div
