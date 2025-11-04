@@ -20,6 +20,7 @@ export default function BasketballScene({ scrollProgress }: { scrollProgress: nu
       const targetY = -0.2 + Math.sin(state.clock.elapsedTime) * 0.1;
 
       basketballRef.current.position.y += (targetY - basketballRef.current.position.y) * 0.1;
+      //basketballRef.current.position.x += (targetX - basketballRef.current.position.x) * 0.1;
     }
   });
 

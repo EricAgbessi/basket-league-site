@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Search, User, Trophy, Calendar, Users, Home } from "lucide-react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
-import LiveClock from "./HerosComponents/LiveClock";
+import LiveClock from "./Home/HerosComponents/LiveClock";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

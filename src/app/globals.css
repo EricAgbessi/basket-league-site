@@ -18,3 +18,12 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+@font-face {
+  font-family: 'Rooster';
+  src: url('/fonts/ROOSTER PERSONAL USE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

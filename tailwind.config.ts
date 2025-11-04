@@ -7,7 +7,9 @@ const config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      rooster: ["Rooster", "sans-serif"],
+    },
   },
   plugins: [],
 };
